@@ -21,6 +21,7 @@
 		028DD154187DCE36008B59CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028DD136187DCE36008B59CA /* UIKit.framework */; };
 		028DD15C187DCE36008B59CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 028DD15A187DCE36008B59CA /* InfoPlist.strings */; };
 		028DD15E187DCE36008B59CA /* CS193P_MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028DD15D187DCE36008B59CA /* CS193P_MatchismoTests.m */; };
+		028DD16A187DD5B4008B59CA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 028DD169187DD5B4008B59CA /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		028DD159187DCE36008B59CA /* CS193P-MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CS193P-MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		028DD15B187DCE36008B59CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		028DD15D187DCE36008B59CA /* CS193P_MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS193P_MatchismoTests.m; sourceTree = "<group>"; };
+		028DD168187DD5B4008B59CA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		028DD169187DD5B4008B59CA /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 				028DD144187DCE36008B59CA /* Main.storyboard */,
 				028DD147187DCE36008B59CA /* CardGameViewController.h */,
 				028DD148187DCE36008B59CA /* CardGameViewController.m */,
+				028DD167187DD59B008B59CA /* Models */,
 				028DD14A187DCE36008B59CA /* Images.xcassets */,
 				028DD139187DCE36008B59CA /* Supporting Files */,
 			);
@@ -150,6 +154,15 @@
 				028DD15A187DCE36008B59CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		028DD167187DD59B008B59CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				028DD168187DD5B4008B59CA /* Card.h */,
+				028DD169187DD5B4008B59CA /* Card.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				028DD143187DCE36008B59CA /* CardGameAppDelegate.m in Sources */,
 				028DD149187DCE36008B59CA /* CardGameViewController.m in Sources */,
 				028DD13F187DCE36008B59CA /* main.m in Sources */,
+				028DD16A187DD5B4008B59CA /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
