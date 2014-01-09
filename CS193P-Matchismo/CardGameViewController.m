@@ -35,7 +35,7 @@
 
 - (void)startNewGame
 {
-    _game = nil;
+    self.game = nil;
     [self updateUI];
 }
 
