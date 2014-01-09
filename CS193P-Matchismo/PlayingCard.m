@@ -14,13 +14,11 @@
 {
     int score = 0;
 
-    if ([otherCards count] == 1) {
-        PlayingCard *otherCard = [otherCards firstObject];
-
+    for (PlayingCard *otherCard in otherCards) {
         if (otherCard.rank == self.rank) {
-            score = 4;
+            score += 4;
         } else if ([otherCard.suit isEqualToString:self.suit]) {
-            score = 1;
+            score += 1;
         }
     }
 
