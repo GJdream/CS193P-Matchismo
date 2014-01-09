@@ -29,6 +29,16 @@
     return [[PlayingCardDeck alloc] init];
 }
 
+- (IBAction)touchDealCardsButton:(UIButton *)sender {
+    [self startNewGame];
+}
+
+- (void)startNewGame
+{
+    _game = nil;
+    [self updateUI];
+}
+
 - (IBAction)touchCardButton:(UIButton *)sender
 {
     int chosenButtonIndex = [self.cardButtons indexOfObject:sender];
